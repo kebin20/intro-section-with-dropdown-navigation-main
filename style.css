@@ -42,9 +42,9 @@ nav {
     cursor: pointer;
   }
   
-  /* .close-btn {
+  .close-btn {
     padding-right: 0.2em;
-    font-size: 4em;
+    font-size: 3em;
     cursor: pointer;
     text-align: right;
   }
@@ -56,6 +56,8 @@ nav {
   }
   
   nav {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     text-align: left;
     background-color: hsl(36, 100%, 99%);
@@ -63,7 +65,7 @@ nav {
     height: 100vh;
     right: 0;
     top: 0;
-    width: 65%;
+    width: 50%;
     visibility: hidden;
     transform: translateX(10%);
     opacity: 0;
@@ -71,39 +73,11 @@ nav {
   }
   
   .nav-menu {
+    display: flex;
+    flex-direction: column;
     padding: 1em;
     margin-top: 3em;
-  } */
-
-/* DROPDOWN STYLING */
-.dropdown {
-    position: relative;
-}
-
-.dropdown.active, .link:hover {
-    color: black;
-}
-
-.dropdown-menu {
-    position: absolute;
-    left: 0;
-    top: calc(100% + 0.1rem);
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.5em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-    opacity: 0;
-    /* Used so that the link is not clickable when it's not visible */
-    pointer-events: none;
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-    transform: translateY(-10px);
-}
-
-.dropdown.active > .link:focus + .dropdown-menu {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
+  }
 
 /* HERO STYLING */
 .hero-container {
@@ -157,4 +131,39 @@ nav {
 
 .databiz {
     width: 6.5em;
+}
+
+@media (min-width: 600px) {
+  /* DROPDOWN STYLING (FOR DESKTOP) */
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown.active, .link:hover {
+  color: black;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.1rem);
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  opacity: 1;
+  /* Used so that the link is not clickable when it's not visible */
+  pointer-events: none;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  transform: translateY(-10px);
+}
+
+.dropdown.active > .link:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 }
