@@ -18,12 +18,6 @@ a {
     cursor: pointer;
   }
 
-
-
-img {
-    width: 100%;
-}
-
 /* NAVBAR STYLING */
 header {
     display: flex;
@@ -79,6 +73,10 @@ nav {
     align-items: center;
 }
 
+.hero-image {
+        width: 100%;
+}
+
 .hero-container__h1{
     padding-top: 1em;
 }
@@ -90,12 +88,34 @@ nav {
 }
 
 .hero-container__button {
+    font-size: 1rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bold;
     background: none;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
     border: 1px solid hsl(0, 0%, 8%);
-    border-radius: 1em;
-    padding: 1em 2em;
-
+    border-radius: 0.8em;
+    padding: 1em 1.5em;
+    margin-top: 0.5em;
 }
 
+.client-container {
+    display: flex;
+    align-items: center;
+}
+
+.client-image {
+    width: 5.5em;
+    padding-top: 4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
+.audiophile {
+    width: 4.5em;
+}
+
+.databiz {
+    width: 6.5em;
+}
