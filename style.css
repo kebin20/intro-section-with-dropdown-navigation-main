@@ -15,8 +15,15 @@ body {
 }
 
 a {
+  color: hsl(0, 0%, 41%);
   text-decoration: none;
   cursor: pointer;
+  padding-top: 1.5em;
+}
+
+button {
+  color: hsl(0, 0%, 41%);
+  font-family: 'Epilogue', sans-serif;
 }
 
 /* NAVBAR STYLING */
@@ -38,7 +45,7 @@ nav {
 .header-btn-row {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* POPOUT MENU */
@@ -50,8 +57,8 @@ nav {
 }
 
 .close-btn {
-  padding-right: 0.2em;
-  font-size: 3em;
+  padding: 0.3em;
+  font-size: 2.5em;
   cursor: pointer;
   text-align: right;
 }
@@ -87,6 +94,31 @@ nav {
   margin-top: 1em;
 }
 
+.header-btn-row {
+  padding-top: 1em;
+  padding-right: 1em;
+}
+
+.register-btn {
+  margin-top: 1em;
+}
+
+.login-btn {
+  border: none;
+  background: none;
+  padding: 0.9em 2em;
+}
+
+button.register-btn {
+  border: 2px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  margin-top: 1em;
+  background: none;
+  padding: 0.9em 2em;
+  width: 100%;
+  border-radius: 15px;
+}
+
 /* DROPDOWN STYLING (FOR DESKTOP) */
 .dropdown {
   position: relative;
@@ -97,18 +129,14 @@ nav {
 
 .dropdown-menu {
   position: absolute;
-  left: 0;
-  top: 2;
-  /* min-width: 160px; */
-  background-color: white;
-  padding: 1rem;
-  border-radius: 0.5em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
   opacity: 0;
   /* Used so that the link is not clickable when it's not visible */
   pointer-events: none;
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   transform: translateY(-10px);
+  text-align: right;
 }
 
 .dropdown.active > .link:focus + .dropdown-menu {
@@ -128,6 +156,28 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
+}
+
+svg#drop-btn {
+  padding-left: 1em;
+  width: 5em;
+}
+
+svg.link.dropbtn {
+  padding-left: 1em;
+  width: 5em;
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+}
+
+.company-container {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5em;
 }
 
 /* HERO STYLING */
