@@ -56,6 +56,10 @@ nav {
   cursor: pointer;
 }
 
+.close-container {
+  text-align: end;
+}
+
 .close-btn {
   padding: 0.3em;
   font-size: 2.5em;
@@ -191,8 +195,9 @@ svg.link.dropbtn {
   width: 100%;
 }
 
-.hero-container__h1 {
-  padding-top: 1em;
+.nav-logo {
+  padding: 0.3em;
+  font-size: 2.5rem;
 }
 
 .hero-container__p {
@@ -234,7 +239,7 @@ svg.link.dropbtn {
   width: 6.5em;
 }
 
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
   .dropdown.active,
   .link:hover {
     color: black;
@@ -259,4 +264,47 @@ svg.link.dropbtn {
     transform: translateY(0);
     pointer-events: auto;
   }
-} */
+
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 2em 9em;
+}
+
+.hero-container__h1 {
+  padding: em;
+}
+
+  .client-image {
+    width: 7.5em;
+  }
+
+  .audiophile {
+    width: 5.5em;
+  }
+  
+  .databiz {
+    width: 7.5em;
+  }
+
+  .hero-container {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 4em;
+}
+
+.hero-container__p {
+  color: hsl(0, 0%, 41%);;
+  text-align: left;
+  padding: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  line-height: 1.5;
+}
+
+.hero-container__h1 {
+  font-size: 4rem;
+}
+
+}
