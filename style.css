@@ -61,6 +61,7 @@ nav {
   flex-direction: column;
   position: fixed;
   text-align: left;
+  padding-left: 1em;
   background-color: hsl(36, 100%, 99%);
   color: hsl(240, 100%, 5%);
   height: 100vh;
