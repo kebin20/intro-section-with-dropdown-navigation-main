@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <script
-    src="https://kit.fontawesome.com/566b902c1e.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/566b902c1e.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
@@ -19,21 +19,25 @@
           <i class="fa-solid fa-xmark" id="exit-btn"></i>
         </div>
         <div class="dropdown" data-dropdown>
-          <button class="link" data-dropdown-button>Features</button>
-          <div class="dropdown-menu nav-menu">
-            <a href="" class="link">Todo List</a>
-            <a href="" class="link">Calendar</a>
-            <a href="" class="link">Reminders</a>
-            <a href="" class="link">Planning</a>
+          <button class="link dropbtn" id="drop-btn" data-dropdown-button>
+            Features
+          </button>
+          <div class="dropdown-menu nav-menu" id="dropdownMenu">
+            <a href="#" class="link">Todo List</a>
+            <a href="#" class="link">Calendar</a>
+            <a href="#" class="link">Reminders</a>
+            <a href="#" class="link">Planning</a>
           </div>
         </div>
 
         <div class="dropdown" data-dropdown>
-          <button class="link" data-dropdown-button>Company</button>
-          <div class="dropdown-menu nav-menu">
-            <a href="" class="link">History</a>
-            <a href="" class="link">Our Team</a>
-            <a href="" class="link">Blog</a>
+          <button class="link dropbtn" id="drop-btn" data-dropdown-button>
+            Company
+          </button>
+          <div class="dropdown-menu nav-menu" id="dropdownMenu">
+            <a href="#" class="link">History</a>
+            <a href="#" class="link">Our Team</a>
+            <a href="#" class="link">Blog</a>
           </div>
         </div>
 
@@ -54,7 +58,7 @@
         </svg>
       </button>
     </header>
-    
+
     <div class="main-container">
       <picture>
         <source
