@@ -35,6 +35,12 @@ nav {
   display: flex;
 }
 
+.header-btn-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /* POPOUT MENU */
 
 .header-menu__button {
