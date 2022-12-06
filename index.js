@@ -1,13 +1,5 @@
 import './style.css'
 
-// const dropBtn = document.getElementById('dropbtn')
-// const dropdownMenu = document.getElementById('dropdownMenu')
-
-// dropBtn.addEventListener('click', () => {
-// dropdownMenu.classList.
-// })
-
-
 // Dropdown function (FOR DESKTOP MODE)
 document.addEventListener('click', e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
