@@ -18,15 +18,17 @@ a {
   color: hsl(0, 0%, 41%);
   text-decoration: none;
   cursor: pointer;
-  padding-top: 1.5em;
 }
 
 button {
   color: hsl(0, 0%, 41%);
   font-family: 'Epilogue', sans-serif;
+  cursor: pointer;
 }
 
-/* NAVBAR STYLING */
+/*===============
+navbar styling
+=================*/
 header {
   display: flex;
   justify-content: space-between;
@@ -42,13 +44,19 @@ nav {
   display: flex;
 }
 
+.nav-item {
+  padding-top: 1.5em;
+}
+
 .header-btn-row {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* POPOUT MENU */
+/*===============
+popout menu styling
+=================*/
 
 .header-menu__button {
   background: none;
@@ -79,7 +87,7 @@ nav {
   position: fixed;
   text-align: left;
   padding-left: 1em;
-  background-color: hsl(36, 100%, 99%);
+  background-color: hsl(0, 0%, 98%);
   color: hsl(240, 100%, 5%);
   height: 100vh;
   right: 0;
@@ -123,7 +131,9 @@ button.register-btn {
   border-radius: 15px;
 }
 
-/* DROPDOWN STYLING (FOR DESKTOP) */
+/*===============
+dropdown styling
+=================*/
 .dropdown {
   position: relative;
   display: flex;
@@ -184,7 +194,9 @@ svg.link.dropbtn {
   padding-top: 1.5em;
 }
 
-/* HERO STYLING */
+/*===============
+hero styling
+=================*/
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -219,6 +231,9 @@ svg.link.dropbtn {
   margin-top: 0.5em;
 }
 
+/*===============
+company container styling
+=================*/
 .client-container {
   display: flex;
   align-items: center;
@@ -240,6 +255,68 @@ svg.link.dropbtn {
 }
 
 @media (min-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 2em 9em;
+  }
+
+  /*===============
+NAVBAR STYLING
+=================*/
+  nav {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: auto;
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+    transition: none;
+  }
+
+  .nav-item {
+    padding-right: 1em;
+    padding-top: 0;
+  }
+
+  header {
+    justify-content: unset;
+  }
+
+  .header-btn-row {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  button.register-btn {
+    margin-top: 0;
+  }
+
+  .header-menu__button,
+  .close-btn {
+    display: none;
+  }
+
+  .company-container,
+  a {
+    padding-top: 0;
+  }
+
+  svg#drop-btn {
+    padding-left: 0.5em;
+    width: 1em;
+  }
+
+  svg.link.dropbtn {
+    padding-left: 0.5em;
+    width: 1em;
+  }
+
+  /*===============
+DROPDOWN STYLING
+=================*/
   .dropdown.active,
   .link:hover {
     color: black;
@@ -248,7 +325,7 @@ svg.link.dropbtn {
   .dropdown-menu {
     position: absolute;
     left: 0;
-    top: calc(100% + 0.1rem);
+    top: calc(100% + 0.5rem);
     background-color: white;
     padding: 1rem;
     border-radius: 0.5em;
@@ -265,16 +342,12 @@ svg.link.dropbtn {
     pointer-events: auto;
   }
 
-  .main-container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 2em 9em;
-}
-
-.hero-container__h1 {
-  padding: em;
-}
+  /*===============
+HERO STYLING
+=================*/
+  .hero-container__h1 {
+    padding: em;
+  }
 
   .client-image {
     width: 7.5em;
@@ -283,7 +356,7 @@ svg.link.dropbtn {
   .audiophile {
     width: 5.5em;
   }
-  
+
   .databiz {
     width: 7.5em;
   }
@@ -292,19 +365,18 @@ svg.link.dropbtn {
     display: flex;
     align-items: flex-start;
     padding-right: 4em;
-}
+  }
 
-.hero-container__p {
-  color: hsl(0, 0%, 41%);;
-  text-align: left;
-  padding: 0;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  line-height: 1.5;
-}
+  .hero-container__p {
+    color: hsl(0, 0%, 41%);
+    text-align: left;
+    padding: 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    line-height: 1.5;
+  }
 
-.hero-container__h1 {
-  font-size: 4rem;
-}
-
+  .hero-container__h1 {
+    font-size: 4rem;
+  }
 }
