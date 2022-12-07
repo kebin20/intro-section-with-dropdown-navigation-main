@@ -141,12 +141,13 @@ dropdown styling
   align-items: flex-start;
 }
 
+  /* Used so that the link is not clickable when it's not visible */
+
 .dropdown-menu {
   position: absolute;
   margin: 0;
   padding: 0;
   opacity: 0;
-  /* Used so that the link is not clickable when it's not visible */
   pointer-events: none;
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   transform: translateY(-10px);
@@ -337,6 +338,7 @@ DROPDOWN STYLING
   }
 
   .dropdown.active > .link:focus + .dropdown-menu {
+    position: absolute;
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
