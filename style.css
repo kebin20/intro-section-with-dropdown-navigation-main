@@ -267,7 +267,7 @@ company container styling
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 1em 12em;
+    padding: 1em 0em;
   }
 
   /*===============
@@ -373,7 +373,7 @@ HERO STYLING
   .hero-container {
     display: flex;
     align-items: flex-start;
-    padding-right: 10em;
+    padding-right: 2em;
   }
 
   .hero-container__p {
