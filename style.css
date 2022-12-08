@@ -139,14 +139,10 @@ dropdown styling
   width: 6em;
 }
 
-.arrow-down {
+.arrow {
   padding-left: 0.3em;
-  width: 100%;
+  width: 16%;
 }
-
-/* .arrow-up {
-  background-image: url('./images/icon-arrow-up');
-} */
 
 .features-menu,
 .company-menu {
