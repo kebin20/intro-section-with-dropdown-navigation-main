@@ -35,11 +35,6 @@ header {
   padding: 1em;
 }
 
-.header-menu__button {
-  background: none;
-  border: none;
-}
-
 nav {
   display: flex;
 }
@@ -47,12 +42,6 @@ nav {
 .nav-item {
   padding-top: 1.5em;
   padding-right: 2em;
-}
-
-.header-btn-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*===============
@@ -100,32 +89,15 @@ nav {
   transition: all 0.2s;
 }
 
-.features-menu, .company-menu {
+.header-btn-row {
   display: flex;
   flex-direction: column;
-  padding: 1em;
-  margin-top: 1em;
-}
-
-
-.header-btn-row {
+  align-items: center;
   padding-top: 1em;
   padding-right: 1em;
 }
 
 .register-btn {
-  margin-top: 1em;
-  font-size: 1rem;
-}
-
-.login-btn {
-  border: none;
-  background: none;
-  padding: 0.9em 2em;
-  font-size: 1rem;
-}
-
-button.register-btn {
   border: 2px solid hsl(0, 0%, 41%);
   color: hsl(0, 0%, 41%);
   margin-top: 1em;
@@ -133,6 +105,14 @@ button.register-btn {
   padding: 0.9em 2em;
   width: 100%;
   border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.login-btn {
+  border: none;
+  background: none;
+  padding: 0.9em 2em;
+  font-size: 1rem;
 }
 
 /*===============
@@ -145,60 +125,59 @@ dropdown styling
   align-items: flex-start;
 }
 
-  /* Used so that the link is not clickable when it's not visible */
-
-.dropdown-menu {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-  transform: translateY(-10px);
-  text-align: right;
+.dropdown-menu > a:not(:last-child) {
+  padding-bottom: 1em;
 }
 
-/* .features-menu {
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.features-menu,
+.company-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+}
+
+.features-menu {
   display: grid;
   grid-template-columns: minmax(1.5em, 1fr) minmax(5.2em, 1fr);
   position: absolute;
-  top: calc(100% + 1rem);
-  left: calc(100% + -8.5rem);
-  background-color: white;
-  text-align: left;
-  padding: 1.5em;
-  border-radius: 0.5em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   opacity: 0;
+  /* Used so that the link is not clickable when it's not visible */
   pointer-events: none;
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   transform: translateY(-10px);
+  text-align: left;
+}
+
+.company-container {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5em;
 }
 
 .company-menu {
   position: absolute;
-  top: calc(100% + 1rem);
-  left: calc(100% + -4.5rem);
-  background-color: white;
-  width: 8em;
-  text-align: left;
-  padding: 1.5em;
-  border-radius: 0.5em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   transform: translateY(-10px);
-} */
+  text-align: left;
+}
 
-/* .dropdown.active > .link:focus + .features-menu, .dropdown.active > .link:focus + .company-menu {
-  position: absolute;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-} */
-
-.dropdown.active > .link:focus + .dropdown-menu {
+.dropdown.active > .link:focus + .features-menu,
+.dropdown.active > .link:focus + .company-menu {
   position: relative;
   opacity: 1;
   transform: translateY(0);
@@ -209,34 +188,6 @@ dropdown styling
 .link:hover {
   position: relative;
   color: black;
-}
-
-.dropbtn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-svg#drop-btn {
-  padding-left: 1em;
-  width: 5em;
-}
-
-svg.link.dropbtn {
-  padding-left: 1em;
-  width: 5em;
-}
-
-.features-container {
-  display: flex;
-  align-items: center;
-}
-
-.company-container {
-  display: flex;
-  align-items: center;
-  padding-top: 1.5em;
 }
 
 /*===============
@@ -305,7 +256,6 @@ company container styling
     flex-direction: row-reverse;
     align-items: center;
     padding: 1em 12em;
-
   }
 
   /*===============
@@ -345,34 +295,9 @@ NAVBAR STYLING
     display: none;
   }
 
-  /* .company-container,
-  a {
-    padding-top: 0;
-  } */
-
-  svg#drop-btn {
-    padding-left: 0.5em;
-    width: 1em;
-  }
-
-  svg.link.dropbtn {
-    padding-left: 0.5em;
-    width: 1em;
-  }
-
   /*===============
 DROPDOWN STYLING
 =================*/
-.dropdown-menu > a:not(:last-child) {
-  padding-bottom: 1.2em;
-}
-
-  .dropdown.active,
-  .link:hover {
-    color: black;
-    cursor: pointer;
-  }
-
   .features-menu {
     display: grid;
     grid-template-columns: minmax(1.5em, 1fr) minmax(5.2em, 1fr);
@@ -406,7 +331,8 @@ DROPDOWN STYLING
     transform: translateY(-10px);
   }
 
-  .dropdown.active > .link:focus + .features-menu, .dropdown.active > .link:focus + .company-menu {
+  .dropdown.active > .link:focus + .features-menu,
+  .dropdown.active > .link:focus + .company-menu {
     position: absolute;
     opacity: 1;
     transform: translateY(0);
