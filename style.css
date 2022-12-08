@@ -265,7 +265,7 @@ company container styling
 @media (min-width: 600px) {
   .main-container {
     display: grid;
-    grid-template-columns: minmax(1em,0.8fr) 5em minmax(1em,0.5fr) ;
+    grid-template-columns: minmax(1em,1.5fr) 5em minmax(1em,1fr) ;
     grid-template-areas: 
       "content . img"
       "content . img";
@@ -366,7 +366,7 @@ HERO STYLING
   }
 
   .hero-container__h1 {
-    padding-top: 1em;
+    padding-top: 2em;
     font-size: 5rem;
   }
 
