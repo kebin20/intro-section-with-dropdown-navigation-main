@@ -5,13 +5,12 @@ document.addEventListener("click", (e) => {
   const isDropdownButton = e.target.matches("[data-dropdown-button]");
   if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
   let currentDropdown;
+  let drop;
   if (isDropdownButton) {
     currentDropdown = e.target.closest("[data-dropdown]");
+    drop = e.target.closest("[data-dropdown-button]");
     currentDropdown.classList.toggle("active");
-    currentDropdown.getElementById("arrow-features").src =
-      "./images/icon-arrow-up.svg";
-    currentDropdown.getElementById("arrow-company").src =
-      "./images/icon-arrow-up.svg";
+    drop.src = "./images/icon-arrow-up.svg";
   }
 
   document.querySelectorAll("[data-dropdown].active").forEach((dropdown) => {
@@ -32,9 +31,3 @@ menuButton.addEventListener("click", () => {
 exitButton.addEventListener("click", () => {
   nav.classList.remove("open-nav");
 });
-
-// else {
-//     document.getElementById("arrow-features").src =
-//     "./images/icon-arrow-down.svg";
-//   document.getElementById("arrow-company").src = "./images/icon-arrow-down.svg";
-//   }
