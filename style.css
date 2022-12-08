@@ -264,10 +264,14 @@ company container styling
 
 @media (min-width: 600px) {
   .main-container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 1em 0em;
+    display: grid;
+    grid-template-columns: minmax(1em,0.8fr) 5em minmax(1em,0.5fr) ;
+    grid-template-areas: 
+      "content . img"
+      "content . img";
+    padding-top: 1em;
+    padding-left: 10em;
+    padding-right: 10em;
   }
 
   /*===============
@@ -295,7 +299,7 @@ NAVBAR STYLING
   .header-btn-row {
     flex-direction: row;
     padding: 0;
-    margin-left: 15vw;
+    /* margin-left: 35vw; */
   }
 
   button.register-btn {
@@ -354,12 +358,32 @@ DROPDOWN STYLING
   /*===============
 HERO STYLING
 =================*/
-  .hero-container__h1 {
-    padding: 0em;
+  .hero-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    grid-area: content;
   }
 
+  .hero-container__h1 {
+    padding-top: 1em;
+    font-size: 5rem;
+  }
+
+  .hero-container__p {
+    color: hsl(0, 0%, 41%);
+    text-align: left;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  .hero-container__button {
+    margin: 0;
+  }
+  
   .client-image {
     width: 7.5em;
+    padding-top: 5em;
   }
 
   .audiophile {
@@ -370,27 +394,13 @@ HERO STYLING
     width: 7.5em;
   }
 
-  .hero-container {
-    display: flex;
-    align-items: flex-start;
-    padding-right: 2em;
-  }
-
-  .hero-container__p {
-    color: hsl(0, 0%, 41%);
-    text-align: left;
-    padding: 0;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    line-height: 1.5;
-  }
-
-  .hero-container__h1 {
-    font-size: 4rem;
-  }
+.hero-image-container {
+  grid-area: img;
+}
 
   .hero-image {
-    width: 30vw;
+    width: 100%;
     height: 100%;
   }
+
 }
