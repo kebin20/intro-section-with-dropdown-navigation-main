@@ -36,9 +36,20 @@ document.addEventListener('click', (e) => {
     arrowCompany.classList.toggle('arrow-up');
   }
 
-    document.querySelectorAll('[data-dropdown].active').forEach((dropdown) => {
-      if (dropdown === currentDropdown) return;
+  document
+    .querySelectorAll('[data-dropdown-features].active')
+    .forEach((dropdown) => {
+      if (dropdown === currentDropdownFeatures) return;
       dropdown.classList.remove('active');
+      arrowFeatures.classList.toggle('arrow-up');
+    });
+
+  document
+    .querySelectorAll('[data-dropdown-company].active')
+    .forEach((dropdown) => {
+      if (dropdown === currentDropdownCompany) return;
+      dropdown.classList.remove('active');
+      arrowCompany.classList.toggle('arrow-up');
     });
 });
 
