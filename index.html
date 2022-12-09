@@ -19,16 +19,28 @@
           <i class="fa-solid fa-xmark close-btn" id="exit-btn"></i>
         </div>
         <div class="features-container nav-item">
-          <div class="dropdown" data-dropdown>
-            <button class="link dropbtn" id="drop-btn" data-dropdown-button>
+          <div class="dropdown" data-dropdown-features>
+            <button
+              class="link dropbtn"
+              id="drop-btn"
+              data-dropdown-button-features
+            >
               Features
-              <img
-                class="arrow"
+              <svg
+                class="arrow-down"
                 id="arrow-features"
-                src="./images/icon-arrow-down.svg"
-                alt="arrow down icon"
-                data-dropdown-button
-              />
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+                data-dropdown-button-features
+              >
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
             </button>
             <div class="dropdown-menu features-menu" id="dropdownMenu">
               <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -64,16 +76,28 @@
         </div>
 
         <div class="company-container nav-item">
-          <div class="dropdown" data-dropdown>
-            <button class="link dropbtn" id="drop-btn" data-dropdown-button>
+          <div class="dropdown" data-dropdown-company>
+            <button
+              class="link dropbtn"
+              id="drop-btn"
+              data-dropdown-button-company
+            >
               Company
-              <img
-                class="arrow"
+              <svg
+                class="arrow-down"
                 id="arrow-company"
-                src="./images/icon-arrow-down.svg"
-                alt="arrow down icon"
-                data-dropdown-button
-              />
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+                data-dropdown-button-company
+              >
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
             </button>
 
             <div class="dropdown-menu company-menu" id="dropdownMenu">
