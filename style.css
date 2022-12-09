@@ -243,8 +243,13 @@ hero styling
   color: hsl(0, 0%, 98%);
   border: 1px solid hsl(0, 0%, 8%);
   border-radius: 0.8em;
-  padding: 1.1em 1.7em;
+  padding: 1em 1.7em;
   margin-top: 0.5em;
+}
+
+.hero-container__button:hover {
+  background-color: hsl(0, 0%, 41%);
+  border: 1px solid hsl(0, 0%, 41%);
 }
 
 /*===============
