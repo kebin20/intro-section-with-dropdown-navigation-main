@@ -283,8 +283,8 @@ company container styling
       'content . img'
       'content . img';
     padding-top: 1em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
     width: 100vw;
   }
 
@@ -318,7 +318,7 @@ NAVBAR STYLING
   .header-btn-row {
     flex-direction: row;
     padding: 0;
-    margin-left: 15vw;
+    margin-left: 5%;
   }
 
   button.register-btn {
