@@ -275,17 +275,14 @@ company container styling
   width: 6.5em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .main-container {
     display: grid;
-    grid-template-columns: minmax(1em, 1fr) 0.2fr minmax(1em, 1fr);
+    justify-content: center;
+    grid-template-columns: minmax(1em, 500px) 0.2fr minmax(1em, 500px);
     grid-template-areas:
       'content . img'
       'content . img';
-    padding-top: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    width: 100vw;
   }
 
   /*===============
@@ -307,7 +304,7 @@ NAVBAR STYLING
   }
 
   .nav-logo {
-    padding-right: 2em;
+    padding-right: 1em;
     padding-left: 1em;
   }
 
@@ -318,9 +315,9 @@ NAVBAR STYLING
   .header-btn-row {
     flex-direction: row;
     padding: 0;
-    margin-left: 5%;
+    margin-left: 55%;
   }
-
+  
   button.register-btn {
     margin-top: 0;
   }
