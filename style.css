@@ -318,7 +318,7 @@ NAVBAR STYLING
   .header-btn-row {
     flex-direction: row;
     padding: 0;
-    margin-left: 40vw;
+    margin-left: 15vw;
   }
 
   button.register-btn {
@@ -387,8 +387,8 @@ HERO STYLING
   .hero-container__h1 {
     padding-top: 2em;
     font-size: 4rem;
-    padding-right: 1em;
-    width: 79%;
+    padding-right: 0.2em;
+    width: 100%;
   }
 
   .hero-container__p {
