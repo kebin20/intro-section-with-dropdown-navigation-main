@@ -283,6 +283,7 @@ company container styling
     grid-template-areas:
       'content . img'
       'content . img';
+      padding-top: 1em;
   }
 
   /*===============
