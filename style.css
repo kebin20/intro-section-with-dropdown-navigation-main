@@ -396,7 +396,9 @@ HERO STYLING
     text-align: left;
     padding: 0;
     line-height: 1.5;
-    padding-right: 15em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   .hero-container__button {
