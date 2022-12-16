@@ -316,7 +316,7 @@ NAVBAR STYLING
   .header-btn-row {
     flex-direction: row;
     padding: 0;
-    margin-left: 55%;
+    margin-left: 15%;
   }
   
   button.register-btn {
