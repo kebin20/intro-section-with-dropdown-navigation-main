@@ -12,6 +12,7 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
+    
     <header class="mobile-header" >
       <h1 class="nav-logo">snap</h1>
       <nav id="nav">
@@ -110,11 +111,18 @@
         <a href="#" class="nav-item">Careers</a>
         <a href="#" class="nav-item">About</a>
 
+        <!-- This needs to be visible on mobile and hidden on desktop-->
         <div class="header-btn-row">
           <button class="login-btn">Login</button>
           <button class="register-btn">Register</button>
         </div>
       </nav>
+
+<!-- This needs to be visible on desktop and hidden on mobile -->
+      <div class="header-btn-row-desktop">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Register</button>
+      </div>
 
       <button class="header-menu__button open" id="menu-btn">
         <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">

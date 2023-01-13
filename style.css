@@ -44,6 +44,10 @@ nav {
   padding-right: 2em;
 }
 
+.header-btn-row-desktop {
+display: none;
+}
+
 /*===============
 popout menu styling
 =================*/
@@ -279,11 +283,12 @@ company container styling
   .main-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: minmax(1em, 500px) 0.2fr minmax(1em, 500px);
+    grid-template-columns: minmax(1em, 500px) 0.2fr minmax(1em, 490px);
     grid-template-areas:
       'content . img'
       'content . img';
       padding-top: 1em;
+      margin-bottom: 2em;
   }
 
   /*===============
@@ -313,10 +318,15 @@ NAVBAR STYLING
     justify-content: unset;
   }
 
+  .header-btn-row-desktop {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 3em;
+  }
+
   .header-btn-row {
-    flex-direction: row;
-    padding: 0;
-    margin-left: 17%;
+    display: none;
   }
   
   button.register-btn {
